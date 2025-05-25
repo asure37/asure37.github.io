@@ -1,0 +1,47 @@
+/*
+File: css/style.css
+Description: Custom styles overriding Bootstrap and defining brand palette, typography, spacing.
+*/
+/* Import Google Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  h1, h2, h3, .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  :root {
+    --primary-color: #0066cc;
+    --secondary-color: #e0f7fa;
+    --accent-color: #ff6f61;
+  }
+  
+  .navbar {
+    background-color: var(--primary-color) !important;
+  }
+  .nav-link {
+    color: #fff !important;
+  }
+  .nav-link:hover {
+    color: var(--accent-color) !important;
+  }
+  
+  section#about {
+    background: var(--secondary-color);
+  }
+  
+  .card {
+    border: none;
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  footer {
+    font-size: 0.9rem;
+  }
+  
+  /*
