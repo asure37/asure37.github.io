@@ -18,6 +18,7 @@
       --accent-color: #FF6F61;
       --text-color: #212529;
       --light-color: #ffffff;
+      --gradient-angle: 135deg;
     }
     body {
       font-family: 'Poppins', sans-serif;
@@ -52,16 +53,18 @@
     nav.scrolled .nav-link { color: var(--text-color); }
     .nav-link:hover { color: var(--accent-color); }
 
-    /* Hero Section */
+    /* Hero Section with dynamic gradient */
     .hero {
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       min-height: 60vh;
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      background: linear-gradient(var(--gradient-angle), var(--primary-color) 0%, var(--accent-color) 100%);
+      background-size: 200% 200%;
       color: var(--light-color);
       padding: 2rem 1rem;
+      transition: background 0.2s ease;
     }
     .hero h1 { font-size: 2.5rem; margin-bottom: 0.75rem; }
     .hero p { font-size: 1rem; margin-bottom: 1.5rem; }
@@ -85,7 +88,6 @@
     #work p { max-width: 600px; margin: 0 auto; }
 
     /* Case Studies */
-    /* Use Bootstrap grid; no custom override here */
     #cases .card { border: none; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; }
     #cases .card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
     .card-title { font-size: 1.1rem; margin-bottom: 0; }
