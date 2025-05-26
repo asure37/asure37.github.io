@@ -85,7 +85,7 @@
     #work p { max-width: 600px; margin: 0 auto; }
 
     /* Case Studies */
-    #cases .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 2rem; }
+    /* Use Bootstrap grid; no custom override here */
     #cases .card { border: none; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; }
     #cases .card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
     .card-title { font-size: 1.1rem; margin-bottom: 0; }
@@ -145,10 +145,10 @@
   <section id="cases">
     <div class="container">
       <h2 class="text-center mb-5">Case Studies</h2>
-      <div class="row">
-        <div class="col">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
           <a href="case1.html" class="text-decoration-none">
-            <div class="card">
+            <div class="card h-100">
               <img src="images/case1.png" class="card-img-top" alt="Service Site" />
               <div class="card-body text-center">
                 <h5 class="card-title">Service Site<br/><small>(Coming Soon)</small></h5>
@@ -156,7 +156,29 @@
             </div>
           </a>
         </div>
-        <div class="col">
+        <div class="col-12 col-md-6 col-lg-3">
           <a href="case2.html" class="text-decoration-none">
-            <div class="card">
-              <img src="images/case2
+            <div class="card h-100">
+              <img src="images/case2.png" class="card-img-top" alt="Small Game" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Small Game<br/><small>(Coming Soon)</small></h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="case3.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="images/case3.png" class="card-img-top" alt="E-commerce Site" />
+              <div class="card-body text-center">
+                <h5 class="card-title">E-commerce<br/><small>(Coming Soon)</small></h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="case4.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="images/case4.png" class="card-img-top" alt="Analytics Dashboard" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Analytics Dashboard<br/><small>(Coming Soon)</small></
